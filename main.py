@@ -201,13 +201,13 @@ if __name__ == "__main__":
                         help='random seed (default: 1)')
     parser.add_argument('--eval', type=bool,  default=False,
                         help='evaluate the model')
-    parser.add_argument('--num_points', type=int, default=2048,
+    parser.add_argument('--num_points', type=int, default=1024,
                         help='num of points to use')
     parser.add_argument('--dropout', type=float, default=0.5,
                         help='dropout rate')
     parser.add_argument('--emb_dims', type=int, default=1024, metavar='N',
                         help='Dimension of embeddings')
-    parser.add_argument('--k', type=int, default=40, metavar='N',
+    parser.add_argument('--k', type=int, default=20, metavar='N',
                         help='Num of nearest neighbors to use')
     parser.add_argument('--model_path', type=str, default='', metavar='N',
                         help='Pretrained model path')
