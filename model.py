@@ -155,7 +155,6 @@ class TransformerEncoderLayer(nn.Module):
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
-        # 移除了pos_enc参数
         attn_out = self.attn(x)
         x = self.norm1(x + self.dropout(attn_out))
         ffn_out = self.ffn(x)
